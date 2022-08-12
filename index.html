@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="calculadora.ico">
+    <script type="text/javascript" src="script.js"></script>
+    <meta property="og:title" content="Calculadora Integral">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image" content="https://fcifuentes2.github.io/meta.jpg">
+    <meta property="og:url" content="https://fcifuentes2.github.io">
+    <meta property="og:description" content="Calculadora que aguiliza tus consultas de facturacion" />
+    <!-- <meta property="og:type" content="article" /> -->
+    
+ </head>
+<body>
+    <form class="container" name="f1" id="formElement">
+    <div class="c1">
+    <h4 class="nuevos">Clientes Nuevos</h4>
+    <hr class="nuevos">
+    
+    <input id="pplatahd" type="radio" name="plan" value="28940" accesskey="p"><label for="pplatahd">Plan Plata HD</label> <br>
+    <input id="porohd" type="radio" name="plan" value="34050" accesskey="o"><label for="porohd">Plan Oro HD</label> <br>
+    <input id="poroplus" type="radio" name="plan" value="38820"><label for="poroplus">Plan Oro Plus HD</label> <br>
+    <input id="oro4k" type="radio" name="plan" value="43260"><label for="oro4k">Plan Oro 4K</label> <br>
+    <input id="broncelite" type="radio" name="plan" value="20610"><label for="broncelite">Plan Bronce Lite</label>
+    </div>  
+    <div class="c2">
+    <h4 class="cartera">Clientes Cartera</h4>
+    <hr class="cartera">
+    <input id="bronce" type="radio" name="plan" value="26170"><label for="bronce">Pack Bronce</label> <br>
+    <input id="broncehd" type="radio" name="plan" value="28940"><label for="broncehd">Pack Bronce HD</label> <br>
+    <input id="plata" type="radio" name="plan" value="34470"><label for="plata">Pack Plata</label> <br>
+    <input id="platahd" type="radio" name="plan" value="37240"><label for="platahd">Pack Plata HD</label> <br> 
+    <input id="orosd" type="radio" name="plan" value="39580"><label for="orosd">Pack Oro</label> <br>
+    <input id="orohd" type="radio" name="plan" value="42350"><label for="orohd">Pack Oro HD</label> <br>
+    <input id="oroplus" type="radio" name="plan" value="43220"><label for="oroplus">Pack Oro Plus</label> <br>
+    <input id="oroplushd" type="radio" name="plan" value="46570"><label for="oroplushd">Plack Oro Plus Hd</label>
+    </div>  
+   
+    <div class="c3">
+      <h4 class="decos">Total de decos</h4>
+      <hr class="decos">
+      <input id="2" type="radio" name="equipos" value="0" ><label for="2">2 decos</label><br>
+      <input id="3" type="radio" name="equipos" value="4100" ><label for="3">3 decos</label><br>
+      <input id="4" type="radio" name="equipos" value="8200"><label for="4">4 decos</label><br>
+      <input id="5" type="radio" name="equipos" value="12300"><label for="5">5 decos</label><br>
+      <input id="6" type="radio" name="equipos" value="16400"><label for="6">6 decos</label><br>
+      <input id="7" type="radio" name="equipos" value="20500"><label for="7">7 decos</label><br>
+      <input id="8" type="radio" name="equipos" value="24600"><label for="8">8 decos</label>
+      </div>
+      <div class="c4">
+        <h4 class="premium">Paquetes Premium</h4>
+        <hr class="premium">
+        <input id="tnt" type="checkbox" name="tnt" value="9150"><label class="rvpValor" for="tnt">Tnt $9.150---------></label>
+        <input class="cheEspacio" id="rvp1" type="checkbox" name="rvp1" value="-4575"><label class="rvpEspacio" for="rvp1">50%</label><br>
+        <input id="tntv" type="checkbox" name="Tnt" value="8300"><label for="tntv">Tnt $8.300---------></label>
+        <input class="cheEspacio" id="rvp2" type="checkbox" name="rvp2" value="-4150"><label class="rvpEspacio" for="rvp2">50%</label> <br>   
+        <input id="tnthd" type="checkbox" name="premium3" value="11850"><label for="tnthd">Tnt HD $11.850--></label>
+        <input class="cheEspacio" id="rvp3" type="checkbox" name="rvp3" value="-5925"><label class="rvpEspacio" for="rvp3">50%</label> <br>
+        <input id="hbo" type="checkbox" name="premium4" value="8300"><label for="hbo">Hbo-----------------></label>
+        <input class="cheEspacio" id="rvp4" type="checkbox" name="rvp4" value="-4150"><label class="rvpEspacio" for="rvp4">50%</label> <br>
+        <input id="universal" type="checkbox" name="premium6" value="8300"><label for="universal">Universal----------></label> 
+        <input class="cheEspacio" id="rvp5" type="checkbox" name="rvp5" value="-4150"><label class="rvpEspacio" for="rvp5">50%</label> <br>
+        <input id="combo2" type="checkbox" name="premium8" value="10500"><label for="combo2">Combo $10.500</label>
+        <input class="cheEspacio" id="rvp10" type="checkbox" name="rvp10" value="-2580"><label class="rvpEspacio" for="rvp10">Dcto $2580</label><br>
+        <input id="star+" type="checkbox" name="premium9" value="8500"><label for="star+">Star+ $8.500</label> <br>
+        <input id="disney" type="checkbox" name="premium10" value="6500"><label for="disney">Disney $6.500</label> <br>
+        <input id="foxsport" type="checkbox" name="premium11" value="10450"><label for="foxsport">Fox Sport----------></label>
+        <input class="cheEspacio" id="rvp6" type="checkbox" name="rvp6" value="-5225"><label class="rvpEspacio" for="rvp6">50%</label> <br>
+        <input id="hotpack" type="checkbox" name="premium13" value="9050"><label for="hotpack">Hot Pack-----------></label>
+        <input class="cheEspacio" id="rvp7" type="checkbox" name="rvp7" value="-4525"><label class="rvpEspacio" for="rvp7">50%</label> <br>
+        <input id="exxotico" type="checkbox" name="premium14" value="9050"><label for="exxotico">Exxotico-----------></label>
+        <input class="cheEspacio" id="rvp8" type="checkbox" name="rvp8" value="-4525"><label class="rvpEspacio" for="rvp8">50%</label> <br>
+        <input id="full" type="checkbox" name="premium15" value="1610"><label for="full">Full Service-------></label>
+        <input class="cheEspacio" id="rvp9" type="checkbox" name="rvp9" value="-805"><label class="rvpEspacio" for="rvp9">50%</label> <br>
+        </div> 
+    <div class="c5">
+    <h4 class="rvo">Promociones Rvo</h4>
+    <hr class="rvo">
+    <input id="rvo1" type="radio" name="rvo" value="0"><label for="rvo1">$0</label><br>
+    <input id="rvo2" type="radio" name="rvo" value="-2000"><label for="rvo2">$2.000</label><br>
+    <input id="rvo3" type="radio" name="rvo" value="-4000"><label for="rvo3">$4.000</label><br>
+    <input id="rvo4" type="radio" name="rvo" value="-5000"><label for="rvo4">$5.000</label><br>
+    <input id="rvo5" type="radio" name="rvo" value="-6000"><label for="rvo5">$6.000</label><br>
+    <input id="rvo6" type="radio" name="rvo" value="-7000"><label for="rvo6">$7.000</label><br>
+    <input id="rvo7" type="radio" name="rvo" value="-8000"><label for="rvo7">$8.000</label><br>
+    <input id="rvo8" type="radio" name="rvo" value="-9000"><label for="rvo8">$9.000</label><br>
+    <input id="rvo9" type="radio" name="rvo" value="-10000"><label for="rvo9">$10.000</label><br>
+    <input id="rvo10" type="radio" name="rvo" value="-11000"><label for="rvo10">$11.000</label><br>
+    <input id="rvo11" type="radio" name="rvo" value="-12000"><label for="rvo11">$12.000</label><br>
+    <input id="rvo12" type="radio" name="rvo" value="-14000"><label for="rvo12">$14.000</label><br>
+    <input id="rvo13" type="radio" name="rvo" value="-16000"><label for="rvo13">$16.000</label><br>
+    <input id="mes2" type="radio" name="rvomes" value=""><label for="mes2">2 meses</label>
+    <input id="mes4" type="radio" name="rvomes" value=""><label for="mes4">4 meses</label>
+    <input id="mes6" type="radio" name="rvomes" value=""><label for="mes6">6 meses</label>
+    <input id="mes8" type="radio" name="rvomes" value=""><label for="mes8">8 meses</label>
+    <input id="mes12" type="radio" name="rvomes" value=""><label for="mes12">12 meses</label>
+    <input id="mes0" type="radio" name="rvomes" value=""><label for="mes0">0</label><br>
+    <input id="rvo14" type="checkbox" name="rvoEquipo" value="-2050"><label for="rvo14">50% deco Adicional</label><br>
+    <input id="rvo15" type="checkbox" name="rvoEquipoFree" value="-4100"><label for="rvo15">Deco Free x 6 meses</label><br>
+    <input id="rvo16" type="text" name="rvoExtra" value="" class="Extra"><label for="rvo16">Ingresa un descuento</label>
+    </div>
+    <div class="c6">
+      <h4 class="extras">Extras</h4>
+      <hr class="extras">
+      <input id="recargo" type="checkbox" name="recargo" value="1600"><label class="rvpValor" for="recargo">Recargo x mora $1.600</label><br>
+      <input id="tntflex" type="checkbox" name="tntflex" value="3550"><label class="rvpValor" for="tntflex">Tnt flexible $3.550</label><br>
+      <input id="deco" type="checkbox" name="deco" value="29990"><label class="rvpValor" for="deco">Deco Adicional $29.990</label><br>
+      <input id="cambio" type="checkbox" name="cambio" value="15990"><label class="rvpValor" for="cambio">Cambio lugar deco/antena $15.990</label><br>
+      <input id="recableado" type="checkbox" name="recableado" value="13990"><label class="rvpValor" for="recableado">Recableado $13.990</label><br>
+      <input id="extra" type="text" name="Extra" value="" class="Extra"><label for="Extra">Ingresa un cargo adicional</label>
+      <br>
+      <br>
+      <label class="flotante" id="resultado" name="resultado"></Label><br>
+        <label class="flotante" id="suma" name="suma"></Label><br>
+      <!-- <label class="resultado2" ></Label><br> -->
+      
+      <button class="flotanteButton" >Borrar</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a id="modo" href="https://fcifuentes2.github.io/">Black</a>
+      <br>
+      <br>
+      <br>
+      <p id="sugerencia">Sugerencias, errores escribeme x workPlace: <a href="https://directv.workplace.com/chat/t/100001212809222" target="_blank"> Fernando Cifuentes Obonaga</a> </p>
+      </div>
+      <div class="c7">
+        <textarea id="texto" placeholder="Selecciona texto, dale click en copy y pega en tu contacto ;-)" ></textarea>
+        <!-- <button id="boton">Copy</button><br> -->
+        <p>
+           <a href="#" id="boton">Copy</a>
+      </p>
+        <label for="" class="tituloCopy">Rvo</label><br>
+        <input id="rvo0" type="checkbox" name="rvo0" value="Quiero la baja del servicio por costos, se deriva a rvo. "><label class="rvo" for="rvo0">Quiero la baja del servicio por costos, se deriva a rvo</label><br>
+        <input id="rvo01" type="checkbox" name="rvo01" value="Quiero la baja del servicio por , se deriva rvo. "><label class="rvo" for="rvo01">Quiero la baja del servicio por , se deriva a rvo</label><br>
+        <input id="rvo02" type="checkbox" name="rvo02" value="Quiero la baja del servicio, llamar en horario, se informa autogestion por midirectv. "><label class="rvo" for="rvo02">Quiero la baja del servicio, llamar en horario, autogestion por midirectv</label><br>
+        <input id="rvo03" type="checkbox" name="rvo03" value="Quiero quiero renovar promociones en servicio basico, se deriva rvo. "><label class="rvo" for="rvo03">Quiero quiero renovar promociones en servicio basico, se deriva rvo</label><br>
+        <input id="rvo04" type="checkbox" name="rvo04" value="Quiero quiero promociones o la baja del servicio, se deriva rvo. "><label class="rvo" for="rvo04">Quiero quiero promociones o la baja del servicio, se deriva rvo</label><br>
+        <label for="" class="tituloCopy">Rvp</label><br>
+        <input id="rvp0" type="checkbox" name="rvp0" value="Quiero la baja de la programacion premium, acepta ofertas de retencion "><label class="rvp" for="rvp0">Quiero la baja de la programacion premium, acepta ofertas de retencion</label><br>
+        <input id="rvp01" type="checkbox" name="rvp01" value="Quiero la baja de la programacion premium, cancela fecha ip no acepta ofertas :-( , cancela: "><label class="rvp" for="rvp01">Quiero la baja de la programacion premium, cancela fecha ip no acepta ofertas :-(, cancela:</label>
+        <input id="rvp02" type="checkbox" name="rvp02" value="Hbo "><label class="rvp" for="rvp02">Hbo</label>
+        <input id="rvp03" type="checkbox" name="rvp03" value="Universal "><label class="rvp" for="rvp03">Universal</label>
+        <input id="rvp04" type="checkbox" name="rvp04" value="Tnt "><label class="rvp" for="rvp04">Tnt</label>
+        <input id="rvp05" type="checkbox" name="rvp05" value="FoxSport "><label class="rvp" for="rvp05">FoxSport</label>
+        <input id="rvp06" type="checkbox" name="rvp06" value="HotPAck "><label class="rvp" for="rvp06">HotPack</label><br>
+        <input id="rvp07" type="checkbox" name="rvp07" value="Quiero quiero renovar promociones, acepta ofertas retepremium 50% x 4 meses." ><label class="rvo" for="rvp07" >Quiero quiero renovar promociones, acepta ofertas retepremium 50% x 4 meses</label><br>
+        <label for="" class="tituloCopy">Factura</label><br>
+        <input id="fac" type="checkbox" name="fac" value="Porque incremento el precio de la boleta, se informa aumento de precios. "><label class="rvp" for="fac">Porque incremento el precio de la boleta, se informa aumento de precios</label>
+        <input id="fac1" type="checkbox" name="fac1" value="Acepta $2000. "><label class="rvp" for="fac1">Acepta $2000</label>
+        <input id="fac2" type="checkbox" name="fac2" value="Se reclama x back office. "><label class="rvp" for="fac2">Se reclama x back office</label>
+        <input id="fac3" type="checkbox" name="fac3" value="Solicita baja, se deriva rvo. "><label class="rvp" for="fac3">Solicita baja, se deriva rvo</label><br>        
+        <input id="fac4" type="checkbox" name="fac4" value="Porque me descuentan otra vez de la tc, se confirma cancelacion de la tc, se factura mes anticipado. "><label class="rvp" for="fac4">Porque me descuentan otra vez de la tc, se confirma cancelacion de la tc, se factura mes anticipado </label><br>
+        <input id="fac5" type="checkbox" name="fac5" value="No me llega la boleta, se actualiza email, se registra factura electronica. "><label class="rvp" for="fac5">No me llega la boleta, se actualiza email, se registra factura electronica </label><br>
+        <input id="fac6" type="checkbox" name="fac6" value="Cancela debito automatico. "><label class="rvp" for="fac6">Cancela debito automatico </label><br>
+       
+       <label for="" class="tituloCopy">Cobranzas</label><br>
+        <input id="cob" type="checkbox" name="cob" value="Quiero avisar que pagare la boleta y me borren el mensaje en pantalla. "><label class="rvp" for="cob">Quiero avisar que pagare la boleta y me borren el mensaje en pantalla</label><br>
+        <input id="cob1" type="checkbox" name="cob1" value="Quiero saber si me pueden aplicar una rebaja en la deuda para pagar la boleta, se deriva a cobranzas. "><label class="rvp" for="cob1">Quiero saber si me pueden aplicar una rebaja en la deuda para pagar la boleta, se deriva a cobranzas</label><br>
+        <p>
+          <a href="https://directv.workplace.com/work/landing/input/" class="enlace" target="_blank">WorkPlace </a><a href="https://psmfsa-oci.dtvpan.com/PSM/NUI/#/login" class="enlace" target="_blank">Icx </a><a href="http://clsatvisorf5prd-oci.dtvpan.com/AW025_NewVisor/" class="enlace" target="_blank">Visor </a><a href="https://dtvweb-cl.dtvpan.com/" class="enlace" target="_blank">Sds </a><a href="https://wfo15.dtvpan.com/wfo/control/signin" class="enlace" target="_blank">Verint </a><a href="https://egky.fa.us6.oraclecloud.com/" class="enlace" target="_blank">Integra </a>
+          <a href="https://www.directv.cl" class="enlace" target="_blank">Directv </a>
+          <a href="hcJulio.ods" class="enlace"  download="HCJulio.ods">hcJulio</a>  
+          
+         
+       </p>
+      </div>
+      <div class="c8">
+        <label for="" class="tituloCopy">Programacion</label><br>
+        <input id="pro" type="checkbox" name="pro" value="Quiero activar el canal Tnt, acepta proporcional mas el mes completo en siguiente factura. "><label class="rvo" for="pro">Quiero activar el canal Tnt, acepta proporcional mas el mes completo en siguiente factura</label><br>
+        <input id="pro1" type="checkbox" name="pro1" value="Quiero activar el canal FoxSport, acepta proporcional mas el mes completo en siguiente factura. "><label class="rvo" for="pro1">Quiero activar el canal FoxSport, acepta proporcional mas el mes completo en siguiente factura</label><br>
+        <input id="pro2" type="checkbox" name="pro2" value="Acepta cambio de plan plata a oro con oferta por 3 meses pagando plan plata"><label class="rvp" for="pro2">Acepta cambio de plan plata a oro con oferta por 3 meses pagando plan plata</label><br>
+        <input id="pro3" type="checkbox" name="pro3" value="Acepta programacion premium free agosto siguientes 2 meses al 50%, activa: "><label class="rvp" for="pro3">Acepta programacion premium free agosto siguientes 2 meses al 50%, activa:</label>
+        <input id="pro4" type="checkbox" name="pro4" value="Hbo "><label class="rvp" for="pro4">Hbo</label>
+        <input id="pro5" type="checkbox" name="pro5" value="Universal "><label class="rvp" for="pro5">Universal</label>
+        <input id="pro6" type="checkbox" name="pro6" value="Hot Pack "><label class="rvp" for="pro6">Hot Pack</label><br>
+        <input id="pro7" type="checkbox" name="pro7" value="Quiero un deco adicional, acepta 29990 por instalacion + 4100 deco adicional en proxima boleta. "><label class="rvp" for="pro7">Quiero un deco adicional, acepta 29990 por instalacion + 4100 deco adicional en proxima boleta</label><br>
+        <input id="pro8" type="checkbox" name="pro8" value="Acepta full service primero 2 meses $805, siguientes meses $1610. "><label class="rvp" for="pro8">Acepta full service primero 2 meses $805, siguientes meses $1610</label><br>
+        <input id="pro9" type="checkbox" name="pro9" value="Quiero comprar PPV, se activa PPV por $2990. "><label class="rvp" for="pro9">Quiero comprar PPV, se activa PPV por $2990</label><br>
+        <label for="" class="tituloCopy">Tst</label><br>
+        <input id="tst" type="checkbox" name="tst" value="Quiero realizar la mudanza de mi servicio, se genera orden para mudar el servicio. "><label class="rvp" for="tst">Quiero realizar la mudanza de mi servicio, se genera orden para mudar el servicio</label><br>
+        <input id="tst1" type="checkbox" name="tst1" value="Tengo un deco que no enciende, se realizan pruebas, se genera wo :-( "><label class="rvo" for="tst1">Tengo un deco que no enciende, se realizan pruebas, se genera wo :-(</label><br>
+        <input id="tst2" type="checkbox" name="tst2" value="Me aparece codigo 771, se realizan pruebas, no se soluciona, se genera wo :-( "><label class="rvo" for="tst2">Me aparece codigo 771, se realizan pruebas, no se soluciona, se genera wo :-(</label><br>
+        <input id="tst3" type="checkbox" name="tst3" value="Me aparece codigo 771, se realizan pruebas, se soluciona "><label class="rvo" for="tst3">Me aparece codigo 771, se realizan pruebas, se soluciona</label><br>
+        <input id="tst4" type="checkbox" name="tst4" value="Me aparece codigo 721/722, se envian comandos se soluciona, se informan medios de autogestion. "><label class="rvo" for="tst4">Me aparece codigo 721/722, se envian comandos se soluciona, se informan medios de autogestion</label><br>
+        <input id="tst5" type="checkbox" name="tst5" value="Se pasa Work Orden a csr 1, se reporta por chat. "><label class="rvo" for="tst5">Se pasa Work Orden a csr 1, se reporta por chat</label><br>
+        <input id="tst6" type="checkbox" name="tst6" value="Necesito un control remoto, se envia a domicilo. "><label class="rvo" for="tst6">Necesito un control remoto, se envia a domicilo</label><br>
+        <input id="tst7" type="checkbox" name="tst7" value="Necesito un configurar control remoto, se configura con exito. "><label class="rvo" for="tst7">Necesito un configurar control remoto, se configura con exito</label><br>
+        <input id="tst8" type="checkbox" name="tst8" value="Quiero cambiar deco/antena de lugar, se genera orden. "><label class="rvo" for="tst8">Quiero cambiar deco/antena de lugar, se genera orden.</label>
+        <input id="tst9" type="checkbox" name="tst9" value="Se confirma cobro en proxima boleta de $15.990. "><label class="rvo" for="tst9">Se confirma cobro en proxima boleta de $15.990</label><br>
+        <input id="tst10" type="checkbox" name="tst10" value="Quiero un recableado, se genera orden. "><label class="rvo" for="tst10">Quiero un recableado, se genera orden.</label>
+        <input id="tst11" type="checkbox" name="tst11" value="Se confirma cobro en proxima boleta de $13.990. "><label class="rvo" for="tst11">Se confirma cobro en proxima boleta de $13.990</label><br>
+        <label for="" class="tituloCopy">Extra</label><br>
+        <input id="ext" type="checkbox" name="ext" value="Me aparece un mensaje en pantalla de aviso de corte y ya pague la boleta, se retira osd. "><label class="rvp" for="ext">Me aparece un mensaje en pantalla de aviso de corte y ya pague la boleta, se retira osd</label><br>
+        <input id="ext1" type="checkbox" name="ext1" value="Me aparece en el televisor señales debiles o inexistentes, se configura conexion sintonia. "><label class="rvp" for="ext1">Me aparece en el televisor señales debiles o inexistentes, se configura conexion sintonia</label><br>
+      </div>
+    </form>
+    <br>
+   
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById('boton').addEventListener('click', function(e) {
+      e.preventDefault();
+      //seleccionarTodo();
+      copyToClipBoard();
+      })});
+         
+      function copyToClipBoard() {
+      var content = document.getElementById('texto');
+      content.select();
+      document.execCommand('copy');}
+    </script>
+         
+    
+</body>
+</html>
