@@ -51,6 +51,8 @@ const rvp8Check = document.querySelector('input[name=rvp8]:checked')
 const rvp9Check = document.querySelector('input[name=rvp9]:checked')
 const rvp10Check = document.querySelector('input[name=rvp10]:checked')
 const rvp11Check = document.querySelector('input[name=rvp11]:checked')
+const rvp12Check = document.querySelector('input[name=rvp12]:checked')
+const rvp13Check = document.querySelector('input[name=rvp13]:checked')
 const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')
 const rvoCheck1 = document.querySelector('input[name=rvoEquipoFree]:checked')
 const rvoText = document.querySelector('input[name=rvoExtra]')
@@ -91,6 +93,8 @@ const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
 const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
 const rvp10 = rvp10Check ?  Number(rvp10Check.value): 0
 const rvp11 = rvp11Check ?  Number(rvp11Check.value): 0
+const rvp12 = rvp12Check ?  Number(rvp12Check.value): 0
+const rvp13 = rvp13Check ?  Number(rvp13Check.value): 0
 const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
 const rvoEquipoFree = rvoCheck1 ?  Number(rvoCheck1.value): 0
 const rvoExtra = rvoText ?  Number(rvoText.value): 0
@@ -125,25 +129,27 @@ if(document.getElementById('full').checked){ var full = "Full Service, "}else{ f
 if(document.getElementById('rvp1').checked){ var rvp_1 = "50% x 4 meses, "}else{ rvp_1 = ""}
 if(document.getElementById('rvp2').checked){ var rvp_2 = "50% x 4 meses, "}else{ rvp_2 = ""}
 if(document.getElementById('rvp3').checked){ var rvp_3 = "50% x 4 meses, "}else{ rvp_3 = ""}
-if(document.getElementById('rvp4').checked){ var rvp_4 = "50% x 4 meses, "}else{ rvp_4 = ""}
-if(document.getElementById('rvp5').checked){ var rvp_5 = "50% x 4 meses, "}else{ rvp_5 = ""}
+if(document.getElementById('rvp4').checked){ var rvp_4 = "free x 3 meses en HD, "}else{ rvp_4 = ""}
+if(document.getElementById('rvp5').checked){ var rvp_5 = "free x 3 meses en HD de tnt flexible, "}else{ rvp_5 = ""}
 if(document.getElementById('rvp6').checked){ var rvp_6 = "50% x 4 meses, "}else{ rvp_6 = ""}
 if(document.getElementById('rvp7').checked){ var rvp_7 = "50% x 4 meses, "}else{ rvp_7 = ""}
-if(document.getElementById('rvp8').checked){ var rvp_8 = "free x 3 meses, "}else{ rvp_8 = ""}
+if(document.getElementById('rvp8').checked){ var rvp_8 = "50% x 4 meses, "}else{ rvp_8 = ""}
 if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 4 meses, "}else{ rvp_9 = ""}
-if(document.getElementById('rvp10').checked){ var rvp_10 = "50% x 4 meses, "}else{ rvp_10 = ""}
-if(document.getElementById('rvo2').checked){ var rvo2 = "con descuento en basico de $2.000, "}else{ rvo2 = ""}
-if(document.getElementById('rvo3').checked){ var rvo3 = "con descuento en basico de $4.000, "}else{ rvo3 = ""}
-if(document.getElementById('rvo4').checked){ var rvo4 = "con descuento en basico de $5.000, "}else{ rvo4 = ""}
-if(document.getElementById('rvo5').checked){ var rvo5 = "con descuento en basico de $6.000, "}else{ rvo5 = ""}
-if(document.getElementById('rvo6').checked){ var rvo6 = "con descuento en basico de $7.000, "}else{ rvo6 = ""}
-if(document.getElementById('rvo7').checked){ var rvo7 = "con descuento en basico de $8.000, "}else{ rvo7 = ""}
-if(document.getElementById('rvo8').checked){ var rvo8 = "con descuento en basico de $9.000, "}else{ rvo8 = ""}
-if(document.getElementById('rvo9').checked){ var rvo9 = "con descuento en basico de $10.000, "}else{ rvo9 = ""}
-if(document.getElementById('rvo10').checked){ var rvo10 = "con descuento en basico de $11.000, "}else{ rvo10 = ""}
-if(document.getElementById('rvo11').checked){ var rvo11 = "con descuento en basico de $12.000, "}else{ rvo11 = ""}
-if(document.getElementById('rvo12').checked){ var rvo12 = "con descuento en basico de $14.000, "}else{ rvo12 = ""}
-if(document.getElementById('rvo13').checked){ var rvo13 = "con descuento en basico de $16.000, "}else{ rvo13 = ""}
+if(document.getElementById('rvp10').checked){ var rvp_10 = "free x 3 meses, "}else{ rvp_10 = ""}
+if(document.getElementById('rvp11').checked){ var rvp_11 = "50% x 4 meses, "}else{ rvp_11 = ""}
+if(document.getElementById('rvp12').checked){ var rvp_12 = "50% x 4 meses, "}else{ rvp_12 = ""}
+if(document.getElementById('rvo2').checked){ var rvo2 = "con descuento en basico de $2.000 "}else{ rvo2 = ""}
+if(document.getElementById('rvo3').checked){ var rvo3 = "con descuento en basico de $4.000 "}else{ rvo3 = ""}
+if(document.getElementById('rvo4').checked){ var rvo4 = "con descuento en basico de $5.000 "}else{ rvo4 = ""}
+if(document.getElementById('rvo5').checked){ var rvo5 = "con descuento en basico de $6.000 "}else{ rvo5 = ""}
+if(document.getElementById('rvo6').checked){ var rvo6 = "con descuento en basico de $7.000 "}else{ rvo6 = ""}
+if(document.getElementById('rvo7').checked){ var rvo7 = "con descuento en basico de $8.000 "}else{ rvo7 = ""}
+if(document.getElementById('rvo8').checked){ var rvo8 = "con descuento en basico de $9.000 "}else{ rvo8 = ""}
+if(document.getElementById('rvo9').checked){ var rvo9 = "con descuento en basico de $10.000 "}else{ rvo9 = ""}
+if(document.getElementById('rvo10').checked){ var rvo10 = "con descuento en basico de $11.000 "}else{ rvo10 = ""}
+if(document.getElementById('rvo11').checked){ var rvo11 = "con descuento en basico de $12.000 "}else{ rvo11 = ""}
+if(document.getElementById('rvo12').checked){ var rvo12 = "con descuento en basico de $14.000 "}else{ rvo12 = ""}
+if(document.getElementById('rvo13').checked){ var rvo13 = "con descuento en basico de $16.000 "}else{ rvo13 = ""}
 if(document.getElementById('rvo14').checked){ var rvo14 = "50% deco Adicional x 6 meses, "}else{ rvo14 = ""}
 if(document.getElementById('rvo15').checked){ var rvo15 = "Deco Free x 6 meses, "}else{ rvo15 = ""}
 if(document.getElementById('mes2').checked){ var mes2 = "por 2 meses, "}else{ mes2 = ""}
@@ -183,15 +189,15 @@ if(document.getElementById('fin13').checked){ var fin13 = ""}else{ fin13 = ""}
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
 premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
-rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11+ rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
+rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11 + rvp12 + rvp13 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
 
 final = "total a pagar $" + result;
 acepta = "Cliente acepta continuar con: "
 
 const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + bronce + broncehd + plata + pplatahd + orosd + porohd + poroplus +
  oroplushd +  rvo14 +
- rvo15 + tnt + rvp_1 + tntv + rvp_2 + tnthd + rvp_3 + hbo + rvp_4 + universal + rvp_5 + combo + star + disney + foxsport + rvp_7 + rvp_8 + hotpack + rvp_9 + 
- exxotico + rvp_10 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + rvo13 + mes2 + mes4 + mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + ini8 + ini9 + ini10 + ini11 + ini12 + ini13 + fin1 + fin2 + fin3 + fin4 + 
+ rvo15 + tnt + rvp_1 + tntv + rvp_2 + tnthd + rvp_3 + rvp_4 + rvp_5 + hbo + rvp_6 + universal + rvp_7 + combo + star + disney + foxsport + rvp_9 + rvp_10 + hotpack + rvp_11 + 
+ exxotico + rvp_12 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + rvo13 + mes2 + mes4 + mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + ini8 + ini9 + ini10 + ini11 + ini12 + ini13 + fin1 + fin2 + fin3 + fin4 + 
  fin5 + fin6 + fin7 + fin8 + fin9 + fin10 + fin11 + fin12 + fin13 + final;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
