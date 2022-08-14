@@ -50,6 +50,7 @@ const rvp7Check = document.querySelector('input[name=rvp7]:checked')
 const rvp8Check = document.querySelector('input[name=rvp8]:checked')
 const rvp9Check = document.querySelector('input[name=rvp9]:checked')
 const rvp10Check = document.querySelector('input[name=rvp10]:checked')
+const rvp11Check = document.querySelector('input[name=rvp11]:checked')
 const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')
 const rvoCheck1 = document.querySelector('input[name=rvoEquipoFree]:checked')
 const rvoText = document.querySelector('input[name=rvoExtra]')
@@ -60,9 +61,7 @@ const plan = planRadio ?  Number(planRadio.value): 0
 const rvo = rvoRadio ?  Number(rvoRadio.value): 0
 const equipos = equiposRadio ?  Number(equiposRadio.value): 0
 const premium1 = premium1Check ?  Number(premium1Check.value): 0
-//const tnt = premium1Check ?  String(premium1Check.name): ""
 const premium2 = premium2Check ?  Number(premium2Check.value): 0
-//const tntv = premium2Check ?  String(premium2Check.name): ""
 const premium3 = premium3Check ?  Number(premium3Check.value): 0
 const premium4 = premium4Check ?  Number(premium4Check.value): 0
 const premium5 = premium5Check ?  Number(premium5Check.value): 0
@@ -82,9 +81,7 @@ const cambio = cambioCheck ?  Number(cambioCheck.value): 0
 const recableado = recableadoCheck ?  Number(recableadoCheck.value): 0
 const deco = decoCheck ?  Number(decoCheck.value): 0 
 const rvp1 = rvp1Check ?  Number(rvp1Check.value): 0
-//const rvp1_1 = rvp1Check ?  String(rvp1Check.name): ""
 const rvp2 = rvp2Check ?  Number(rvp2Check.value): 0
-//const rvp2_2 = rvp2Check ?  String(rvp2Check.name): 0
 const rvp3 = rvp3Check ?  Number(rvp3Check.value): 0
 const rvp4 = rvp4Check ?  Number(rvp4Check.value): 0
 const rvp5 = rvp5Check ?  Number(rvp5Check.value): 0
@@ -93,10 +90,12 @@ const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
 const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
 const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
 const rvp10 = rvp10Check ?  Number(rvp10Check.value): 0
+const rvp11 = rvp11Check ?  Number(rvp11Check.value): 0
 const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
 const rvoEquipoFree = rvoCheck1 ?  Number(rvoCheck1.value): 0
 const rvoExtra = rvoText ?  Number(rvoText.value): 0
 const Extra = estraText ?  Number(estraText.value): 0
+//Toma el id del elemento para asignar un valor y poder mostrar resulado en textarea
 if(document.getElementById('pplatahd').checked){ var platahd = "Plan Plata hd, "}else{ platahd = ""}
 if(document.getElementById('porohd').checked){ var orohd = "Plan Oro hd, "}else{ orohd = ""}
 if(document.getElementById('poroplus').checked){ var oroplus = "Plan Oro Plus hd, "}else{ oroplus = ""}
@@ -116,13 +115,13 @@ if(document.getElementById('tntv').checked){ var tntv = "Tnt "}else{ tntv = ""}
 if(document.getElementById('tnthd').checked){ var tnthd = "TntHd "}else{ tnthd = ""}
 if(document.getElementById('hbo').checked){ var hbo = "Hbo "}else{ hbo = ""}
 if(document.getElementById('universal').checked){ var universal = "Universal "}else{ universal = ""}
-if(document.getElementById('combo2').checked){ var combo = "Combo "}else{ combo = ""}
-if(document.getElementById('star+').checked){ var star = "Star+ "}else{ star = ""}
-if(document.getElementById('disney').checked){ var disney = "Disney "}else{ disney = ""}
+if(document.getElementById('combo2').checked){ var combo = "Combo+, "}else{ combo = ""}
+if(document.getElementById('star+').checked){ var star = "Star+, "}else{ star = ""}
+if(document.getElementById('disney').checked){ var disney = "Disney, "}else{ disney = ""}
 if(document.getElementById('foxsport').checked){ var foxsport = "FoxSport "}else{ foxsport = ""}
 if(document.getElementById('hotpack').checked){ var hotpack = "HotPack "}else{ hotpack = ""}
 if(document.getElementById('exxotico').checked){ var exxotico = "Exxotico "}else{ exxotico = ""}
-if(document.getElementById('full').checked){ var full = "Full Service "}else{ full = ""}
+if(document.getElementById('full').checked){ var full = "Full Service, "}else{ full = ""}
 if(document.getElementById('rvp1').checked){ var rvp_1 = "50% x 4 meses, "}else{ rvp_1 = ""}
 if(document.getElementById('rvp2').checked){ var rvp_2 = "50% x 4 meses, "}else{ rvp_2 = ""}
 if(document.getElementById('rvp3').checked){ var rvp_3 = "50% x 4 meses, "}else{ rvp_3 = ""}
@@ -130,7 +129,9 @@ if(document.getElementById('rvp4').checked){ var rvp_4 = "50% x 4 meses, "}else{
 if(document.getElementById('rvp5').checked){ var rvp_5 = "50% x 4 meses, "}else{ rvp_5 = ""}
 if(document.getElementById('rvp6').checked){ var rvp_6 = "50% x 4 meses, "}else{ rvp_6 = ""}
 if(document.getElementById('rvp7').checked){ var rvp_7 = "50% x 4 meses, "}else{ rvp_7 = ""}
-if(document.getElementById('rvp8').checked){ var rvp_8 = "50% x 4 meses, "}else{ rvp_8 = ""}
+if(document.getElementById('rvp8').checked){ var rvp_8 = "free x 3 meses, "}else{ rvp_8 = ""}
+if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 4 meses, "}else{ rvp_9 = ""}
+if(document.getElementById('rvp10').checked){ var rvp_10 = "50% x 4 meses, "}else{ rvp_10 = ""}
 if(document.getElementById('rvo2').checked){ var rvo2 = "con descuento en basico de $2.000, "}else{ rvo2 = ""}
 if(document.getElementById('rvo3').checked){ var rvo3 = "con descuento en basico de $4.000, "}else{ rvo3 = ""}
 if(document.getElementById('rvo4').checked){ var rvo4 = "con descuento en basico de $5.000, "}else{ rvo4 = ""}
@@ -151,137 +152,51 @@ if(document.getElementById('mes6').checked){ var mes6 = "por 6 meses, "}else{ me
 if(document.getElementById('mes8').checked){ var mes8 = "por 8 meses, "}else{ mes8 = ""}
 if(document.getElementById('mes12').checked){ var mes12 = "por 12 meses, "}else{ mes12 = ""}
 if(document.getElementById('mes0').checked){ var mes0 = ""}else{ mes0 = ""}
+if(document.getElementById('ini1').checked){ var ini1 = "desde enero "}else{ ini1 = ""}
+if(document.getElementById('ini2').checked){ var ini2 = "desde febrero "}else{ ini2 = ""}
+if(document.getElementById('ini3').checked){ var ini3 = "desde marzo "}else{ ini3 = ""}
+if(document.getElementById('ini4').checked){ var ini4 = "desde abril "}else{ ini4 = ""}
+if(document.getElementById('ini5').checked){ var ini5 = "desde mayo "}else{ ini5 = ""}
+if(document.getElementById('ini6').checked){ var ini6 = "desde junio "}else{ ini6 = ""}
+if(document.getElementById('ini7').checked){ var ini7 = "desde julio "}else{ ini7 = ""}
+if(document.getElementById('ini8').checked){ var ini8 = "desde agosto "}else{ ini8 = ""}
+if(document.getElementById('ini9').checked){ var ini9 = "desde septiembre "}else{ ini9 = ""}
+if(document.getElementById('ini10').checked){ var ini10 = "desde octubre "}else{ ini10 = ""}
+if(document.getElementById('ini11').checked){ var ini11 = "desde noviembre "}else{ ini11 = ""}
+if(document.getElementById('ini12').checked){ var ini12 = "desde diciembre "}else{ ini12 = ""}
+if(document.getElementById('ini13').checked){ var ini13 = ""}else{ ini13 = ""}
+if(document.getElementById('fin1').checked){ var fin1 = "hasta enero, "}else{ fin1 = ""}
+if(document.getElementById('fin2').checked){ var fin2 = "hasta febrero, "}else{ fin2 = ""}
+if(document.getElementById('fin3').checked){ var fin3 = "hasta marzo, "}else{ fin3 = ""}
+if(document.getElementById('fin4').checked){ var fin4 = "hasta abril, "}else{ fin4 = ""}
+if(document.getElementById('fin5').checked){ var fin5 = "hasta mayo, "}else{ fin5 = ""}
+if(document.getElementById('fin6').checked){ var fin6 = "hasta junio, "}else{ fin6 = ""}
+if(document.getElementById('fin7').checked){ var fin7 = "hasta julio, "}else{ fin7 = ""}
+if(document.getElementById('fin8').checked){ var fin8 = "hasta agosto, "}else{ fin8 = ""}
+if(document.getElementById('fin9').checked){ var fin9 = "hasta septiembre, "}else{ fin9 = ""}
+if(document.getElementById('fin10').checked){ var fin10 = "hasta octubre, "}else{ fin10 = ""}
+if(document.getElementById('fin11').checked){ var fin11 = "hasta noviembre, "}else{ fin11 = ""}
+if(document.getElementById('fin12').checked){ var fin12 = "hasta diciembre, "}else{ fin12 = ""}
+if(document.getElementById('fin13').checked){ var fin13 = ""}else{ fin13 = ""}
 //suma total se le asigna a variable result
 
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
 premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
-rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
+rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11+ rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
 
 final = "total a pagar $" + result;
 acepta = "Cliente acepta continuar con: "
 
-const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + bronce + broncehd + plata + pplatahd + orosd + porohd + poroplus + oroplushd + rvo2 
-+ rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + rvo13 + mes2 + mes4 + mes6 + mes8 + mes12 + mes0 + rvo14 + rvo15 + tnt + rvp_1 +
- tntv + rvp_2 + tnthd + rvp_3 + hbo + rvp_4 + universal + rvp_5 + combo + star + disney + foxsport + rvp_6 + hotpack + rvp_7 + exxotico + rvp_8 + full +  final;
+const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + bronce + broncehd + plata + pplatahd + orosd + porohd + poroplus +
+ oroplushd +  rvo14 +
+ rvo15 + tnt + rvp_1 + tntv + rvp_2 + tnthd + rvp_3 + hbo + rvp_4 + universal + rvp_5 + combo + star + disney + foxsport + rvp_7 + rvp_8 + hotpack + rvp_9 + 
+ exxotico + rvp_10 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + rvo13 + mes2 + mes4 + mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + ini8 + ini9 + ini10 + ini11 + ini12 + ini13 + fin1 + fin2 + fin3 + fin4 + 
+ fin5 + fin6 + fin7 + fin8 + fin9 + fin10 + fin11 + fin12 + fin13 + final;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
-//document.getElementById('suma').innerHTML = suma;
-
 document.getElementById('texto').innerHTML = suma;
 }
-console.log(resultado)
-addEventListener('change', Total);
-
-function Total() {
-
-// obtener todos los input radio y checkbox
-const rvo0Check = document.querySelector('input[name=rvo0]:checked')
-const rvo01Check = document.querySelector('input[name=rvo01]:checked')
-const rvo02Check = document.querySelector('input[name=rvo02]:checked')
-const rvo03Check = document.querySelector('input[name=rvo03]:checked')
-const rvo04Check = document.querySelector('input[name=rvo04]:checked')
-const rvp0Check = document.querySelector('input[name=rvp0]:checked')
-const rvp01Check = document.querySelector('input[name=rvp01]:checked') 
-const rvp02Check = document.querySelector('input[name=rvp02]:checked') 
-const rvp03Check = document.querySelector('input[name=rvp03]:checked') 
-const rvp04Check = document.querySelector('input[name=rvp04]:checked') 
-const rvp05Check = document.querySelector('input[name=rvp05]:checked') 
-const rvp06Check = document.querySelector('input[name=rvp06]:checked') 
-const rvp07Check = document.querySelector('input[name=rvp07]:checked') 
-const facCheck = document.querySelector('input[name=fac]:checked')
-const fac1Check = document.querySelector('input[name=fac1]:checked')
-const fac2Check = document.querySelector('input[name=fac2]:checked')
-const fac3Check = document.querySelector('input[name=fac3]:checked')
-const fac4Check = document.querySelector('input[name=fac4]:checked')
-const fac5Check = document.querySelector('input[name=fac5]:checked')
-const fac6Check = document.querySelector('input[name=fac6]:checked')
-const proCheck = document.querySelector('input[name=pro]:checked')
-const pro1Check = document.querySelector('input[name=pro1]:checked')
-const pro2Check = document.querySelector('input[name=pro2]:checked')
-const pro3Check = document.querySelector('input[name=pro3]:checked')
-const pro4Check = document.querySelector('input[name=pro4]:checked')
-const pro5Check = document.querySelector('input[name=pro5]:checked')
-const pro6Check = document.querySelector('input[name=pro6]:checked')
-const pro7Check = document.querySelector('input[name=pro7]:checked')
-const pro8Check = document.querySelector('input[name=pro8]:checked')
-const pro9Check = document.querySelector('input[name=pro9]:checked')
-const tstCheck = document.querySelector('input[name=tst]:checked')
-const tst1Check = document.querySelector('input[name=tst1]:checked')
-const tst2Check = document.querySelector('input[name=tst2]:checked')
-const tst3Check = document.querySelector('input[name=tst3]:checked')
-const tst4Check = document.querySelector('input[name=tst4]:checked')
-const tst5Check = document.querySelector('input[name=tst5]:checked')
-const tst6Check = document.querySelector('input[name=tst6]:checked')
-const tst7Check = document.querySelector('input[name=tst7]:checked')
-const tst8Check = document.querySelector('input[name=tst8]:checked')
-const tst9Check = document.querySelector('input[name=tst9]:checked')
-const tst10Check = document.querySelector('input[name=tst10]:checked')
-const tst11Check = document.querySelector('input[name=tst11]:checked')
-const cobCheck = document.querySelector('input[name=cob]:checked')
-const cob1Check = document.querySelector('input[name=cob1]:checked')
-const extCheck = document.querySelector('input[name=ext]:checked')
-const ext1Check = document.querySelector('input[name=ext1]:checked')
-
-// convertir los valores a String, o colocar un 0 si no elegieron algo//
-const rvo0 = rvo0Check ?  rvo0Check.value: ""
-const rvo01 = rvo01Check ?  rvo01Check.value: ""
-const rvo02 = rvo02Check ?  rvo02Check.value: ""
-const rvo03 = rvo03Check ?  rvo03Check.value: ""
-const rvo04 = rvo04Check ?  rvo04Check.value: ""
-const rvp0 = rvp0Check ?  rvp0Check.value: "" 
-const rvp01 = rvp01Check ?  rvp01Check.value: ""
-const rvp02 = rvp02Check ?  rvp02Check.value: ""
-const rvp03 = rvp03Check ?  rvp03Check.value: ""
-const rvp04 = rvp04Check ?  rvp04Check.value: ""
-const rvp05 = rvp05Check ?  rvp05Check.value: ""
-const rvp06 = rvp06Check ?  rvp06Check.value: ""
-const rvp07 = rvp07Check ?  rvp07Check.value: ""
-const fac = facCheck ?  facCheck.value: ""
-const fac1 = fac1Check ?  fac1Check.value: ""
-const fac2 = fac2Check ?  fac2Check.value: ""
-const fac3 = fac3Check ?  fac3Check.value: ""
-const fac4 = fac4Check ?  fac4Check.value: ""
-const fac5 = fac5Check ?  fac5Check.value: ""
-const fac6 = fac6Check ?  fac6Check.value: ""
-const pro = proCheck ?  proCheck.value: ""
-const pro1 = pro1Check ?  pro1Check.value: ""
-const pro2 = pro2Check ?  pro2Check.value: ""
-const pro3 = pro3Check ?  pro3Check.value: ""
-const pro4 = pro4Check ?  pro4Check.value: ""
-const pro5 = pro5Check ?  pro5Check.value: ""
-const pro6 = pro6Check ?  pro6Check.value: ""
-const pro7 = pro7Check ?  pro7Check.value: ""
-const pro8 = pro8Check ?  pro8Check.value: ""
-const pro9 = pro9Check ?  pro9Check.value: ""
-const tst = tstCheck ?  tstCheck.value: ""
-const tst1 = tst1Check ?  tst1Check.value: ""
-const tst2 = tst2Check ?  tst2Check.value: ""
-const tst3 = tst3Check ?  tst3Check.value: ""
-const tst4 = tst4Check ?  tst4Check.value: ""
-const tst5 = tst5Check ?  tst5Check.value: ""
-const tst6 = tst6Check ?  tst6Check.value: ""
-const tst7 = tst7Check ?  tst7Check.value: ""
-const tst8 = tst8Check ?  tst8Check.value: ""
-const tst9 = tst9Check ?  tst9Check.value: ""
-const tst10 = tst10Check ?  tst10Check.value: ""
-const tst11 = tst11Check ?  tst11Check.value: ""
-const cob = cobCheck ?  cobCheck.value: ""
-const cob1 = cob1Check ?  cob1Check.value: ""
-const ext = extCheck ?  extCheck.value: ""
-const ext1 = ext1Check ?  ext1Check.value: ""
-
-
-//suma total se le asigna a variable result
-const resultado = rvo0 + rvo01 + rvo02 + rvo03+ rvo04 + rvp0 + rvp01 + rvp02 + rvp03 + rvp04 + rvp05 + rvp06 +
-rvp07 + fac + fac1 + fac2 + fac3 + fac4 + fac5 + fac6 + pro + pro1 +  pro8 + pro9 + tst + tst1 + tst2 + tst3 + tst4 + 
-tst5 + tst6 + tst7 + tst8 + tst9 + tst10 + tst11 + cob + cob1 + ext + ext1 + pro7 + pro2 + pro3 + pro4 + pro5 + pro6 ;
-
-//se asigna valor de variable result a resultado para poder ser mostrado en pantalla
-//document.getElementById('texto').innerHTML = resultado;
-}
-
-
 
         

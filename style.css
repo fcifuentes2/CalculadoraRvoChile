@@ -102,6 +102,7 @@
   color: white;
   border-radius: 4px;
   padding: 2px;
+  font-size: 22px;
  }
  .Extra{
    border-radius: 4px;
@@ -110,9 +111,17 @@
   position: absolute;
   left: 245px;  
 }
+.rvpEspaciofree{
+  position: absolute;
+  left: 335px;  
+}
 .cheEspacio{
   position: absolute;
   left: 220px;
+}
+.cheEspaciofree{
+  position: absolute;
+  left: 310px;
 }
 #sugerencia{
   font-size: 13px;
