@@ -18,6 +18,7 @@ event.preventDefault();
 
 // obtener todos los input radio y checkbox
 const planRadio = document.querySelector('input[name=plan]:checked')
+//const planRadio = document.querySelector('input[name=plan]:checked')
 const rvoRadio = document.querySelector('input[name=rvo]:checked')
 const equiposRadio = document.querySelector('input[name=equipos]:checked')
 const premium1Check = document.querySelector('input[name=tnt]:checked')
