@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://fcifuentes2.github.io/CalculadoraRvoChile/rvo.jpg">
     <meta property="og:url" content="https://fcifuentes2.github.io/CalculadoraRvoChile">
     <meta property="og:description" content="Calculadora que agiliza tus retenciones" />
-    <!-- <meta property="og:type" content="article" /> -->
+    
     
  </head>
 <body>
@@ -28,7 +28,8 @@
     <input id="poroplus" type="radio" name="plan" value="38820"><label for="poroplus">Plan Oro Plus HD</label> <br>
     <input id="oro4k" type="radio" name="plan" value="43260"><label for="oro4k">Plan Oro 4K</label> <br>
     <input id="broncelite" type="radio" name="plan" value="21610"><label for="broncelite">Plan Bronce Lite</label> <br>
-    <input id="broncehdn" type="radio" name="plan" value="19990"><label for="broncehdn">Plan Bronce HD</label>
+    <input id="broncehdn" type="radio" name="plan" value="19990"><label for="broncehdn">Plan Bronce HD</label><br>
+    <input id="directvgo" type="radio" name="plan" value="16990"><label for="directvgo">Directv Go</label>
     </div>  
     <div class="c2">
     <h4 class="cartera">Clientes Cartera</h4>
@@ -70,8 +71,7 @@
         <input class="cheEspacio" id="rvp6" type="checkbox" name="rvp6" value="-4150"><label class="rvpEspacio" for="rvp6">50%</label> <br>
         <input id="universal" type="checkbox" name="premium6" value="8300"><label for="universal">Universal----------></label> 
         <input class="cheEspacio" id="rvp7" type="checkbox" name="rvp7" value="-4150"><label class="rvpEspacio" for="rvp7">50%</label> <br>
-        <input id="combo2" type="checkbox" name="premium8" value="10500"><label for="combo2">Combo $10.500</label>
-        <input class="cheEspacio" id="rvp8" type="checkbox" name="rvp8" value="-2580"><label class="rvpEspacio" for="rvp8">Dcto $2580</label><br>
+        <input id="combo2" type="checkbox" name="premium8" value="10500"><label for="combo2">Combo $10.500</label><br>
         <input id="star+" type="checkbox" name="premium9" value="8500"><label for="star+">Star+ $8.500</label> <br>
         <input id="disney" type="checkbox" name="premium10" value="6500"><label for="disney">Disney $6.500</label> <br>
         <input id="foxsport" type="checkbox" name="premium11" value="10450"><label for="foxsport">Fox Sport----------></label>
@@ -99,7 +99,6 @@
     <input id="rvo10" type="radio" name="rvo" value="-11000"><label for="rvo10">$11.000</label><br>
     <input id="rvo11" type="radio" name="rvo" value="-12000"><label for="rvo11">$12.000</label><br>
     <input id="rvo12" type="radio" name="rvo" value="-14000"><label for="rvo12">$14.000</label><br>
-    <input id="rvo13" type="radio" name="rvo" value="-16000"><label for="rvo13">$16.000</label><br>
     <input id="mes2" type="radio" name="rvomes" value=""><label for="mes2">2 meses</label>
     <input id="mes4" type="radio" name="rvomes" value=""><label for="mes4">4 meses</label>
     <input id="mes6" type="radio" name="rvomes" value=""><label for="mes6">6 meses</label>
@@ -107,7 +106,7 @@
     <input id="mes12" type="radio" name="rvomes" value=""><label for="mes12">12 meses</label>
     <input id="mes0" type="radio" name="rvomes" value=""><label for="mes0">0</label><br>
     <input id="rvo14" type="checkbox" name="rvoEquipo" value="-2050"><label for="rvo14">50% deco Adicional</label><br>
-    <input id="rvo15" type="checkbox" name="rvoEquipoFree" value="-4100"><label for="rvo15">Deco Free x 9 meses</label><br>
+    <input id="rvo15" type="checkbox" name="rvoEquipoFree" value="-4100"><label for="rvo15">Deco Free x 6 meses</label><br>
     <input id="rvo16" type="text" name="rvoExtra" value="" class="Extra"><label for="rvo16">Ingresa un descuento</label>
     </div>
     <div class="c6">
@@ -120,10 +119,10 @@
       <input id="extra" type="text" name="Extra" value="" class="Extra"><label for="Extra">Ingresa un cargo adicional</label>
       <br>
       <br>
-      <label class="flotante" id="resultado" name="resultado"></Label><br>
+      <label>Total </label><label class="enlace, totalEspaciofree" id="total"></label><br>
+      <label>Ofert </label><label class="enlace, totalEspaciofree" id="ofert"></label><br>
+      <label>Paga </label> <label class="flotante, enlace, totalEspaciofree" id="resultado" name="resultado"></Label><br>
         <label class="flotante" id="suma" name="suma"></Label><br>
-      <!-- <label class="resultado2" ></Label><br> -->
-      
       <button class="flotanteButton" >Borrar</button>
       <br>
       <br>
@@ -137,8 +136,8 @@
       </div>
       <div class="c7">
         <textarea id="texto" placeholder="Selecciona texto, dale click en copy y pega en tu contacto ;-)" ></textarea>
-        <!-- <button id="boton">Copy</button><br> -->
-        <p>
+       
+      <p>
            <a href="#" id="boton">Copy</a>
       </p>
       <br>

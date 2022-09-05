@@ -115,6 +115,11 @@
   position: absolute;
   left: 335px;  
 }
+.totalEspaciofree{
+  position: relative;
+  left: 10px;
+  color: black;  
+}
 .cheEspacio{
   position: absolute;
   left: 220px;

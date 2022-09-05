@@ -18,7 +18,6 @@ event.preventDefault();
 
 // obtener todos los input radio y checkbox
 const planRadio = document.querySelector('input[name=plan]:checked')
-//const planRadio = document.querySelector('input[name=plan]:checked')
 const rvoRadio = document.querySelector('input[name=rvo]:checked')
 const equiposRadio = document.querySelector('input[name=equipos]:checked')
 const premium1Check = document.querySelector('input[name=tnt]:checked')
@@ -48,7 +47,6 @@ const rvp4Check = document.querySelector('input[name=rvp4]:checked')
 const rvp5Check = document.querySelector('input[name=rvp5]:checked')
 const rvp6Check = document.querySelector('input[name=rvp6]:checked')
 const rvp7Check = document.querySelector('input[name=rvp7]:checked')
-const rvp8Check = document.querySelector('input[name=rvp8]:checked')
 const rvp9Check = document.querySelector('input[name=rvp9]:checked')
 const rvp10Check = document.querySelector('input[name=rvp10]:checked')
 const rvp11Check = document.querySelector('input[name=rvp11]:checked')
@@ -90,7 +88,6 @@ const rvp4 = rvp4Check ?  Number(rvp4Check.value): 0
 const rvp5 = rvp5Check ?  Number(rvp5Check.value): 0
 const rvp6 = rvp6Check ?  Number(rvp6Check.value): 0
 const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
-const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
 const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
 const rvp10 = rvp10Check ?  Number(rvp10Check.value): 0
 const rvp11 = rvp11Check ?  Number(rvp11Check.value): 0
@@ -107,6 +104,7 @@ if(document.getElementById('poroplus').checked){ var oroplus = "Plan Oro Plus hd
 if(document.getElementById('oro4k').checked){ var oro4k = "Plan Oro 4k, "}else{ oro4k = ""}
 if(document.getElementById('broncelite').checked){ var broncelite = "Plan Bronce Lite, "}else{ broncelite = ""}
 if(document.getElementById('broncehdn').checked){ var broncehdn = "Plan Bronce hd, "}else{ broncehdn = ""}
+if(document.getElementById('directvgo').checked){ var directvgo = "migracion a Directv Go, "}else{ directvgo = ""}
 if(document.getElementById('bronce').checked){ var bronce = "Pack Bronce, "}else{ bronce = ""}
 if(document.getElementById('broncehd').checked){ var broncehd = "Pack Bronce hd, "}else{ broncehd = ""}
 if(document.getElementById('plata').checked){ var plata = "Pack Plata, "}else{ plata = ""}
@@ -134,7 +132,6 @@ if(document.getElementById('rvp4').checked){ var rvp_4 = "free x 3 meses en HD, 
 if(document.getElementById('rvp5').checked){ var rvp_5 = "free x 3 meses en HD de tnt flexible, "}else{ rvp_5 = ""}
 if(document.getElementById('rvp6').checked){ var rvp_6 = "50% x 4 meses, "}else{ rvp_6 = ""}
 if(document.getElementById('rvp7').checked){ var rvp_7 = "50% x 6 meses, "}else{ rvp_7 = ""}
-if(document.getElementById('rvp8').checked){ var rvp_8 = "50% x 4 meses, "}else{ rvp_8 = ""}
 if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 6 meses, "}else{ rvp_9 = ""}
 if(document.getElementById('rvp10').checked){ var rvp_10 = "free x 3 meses, "}else{ rvp_10 = ""}
 if(document.getElementById('rvp11').checked){ var rvp_11 = "50% x 4 meses, "}else{ rvp_11 = ""}
@@ -150,9 +147,8 @@ if(document.getElementById('rvo9').checked){ var rvo9 = "con descuento en basico
 if(document.getElementById('rvo10').checked){ var rvo10 = "con descuento en basico de $11.000 "}else{ rvo10 = ""}
 if(document.getElementById('rvo11').checked){ var rvo11 = "con descuento en basico de $12.000 "}else{ rvo11 = ""}
 if(document.getElementById('rvo12').checked){ var rvo12 = "con descuento en basico de $14.000 "}else{ rvo12 = ""}
-if(document.getElementById('rvo13').checked){ var rvo13 = "con descuento en basico de $16.000 "}else{ rvo13 = ""}
 if(document.getElementById('rvo14').checked){ var rvo14 = "50% deco Adicional x 6 meses, "}else{ rvo14 = ""}
-if(document.getElementById('rvo15').checked){ var rvo15 = "Deco Free x 9 meses, "}else{ rvo15 = ""}
+if(document.getElementById('rvo15').checked){ var rvo15 = "Deco Free x 6 meses, "}else{ rvo15 = ""}
 if(document.getElementById('mes2').checked){ var mes2 = "por 2 meses, "}else{ mes2 = ""}
 if(document.getElementById('mes4').checked){ var mes4 = "por 4 meses, "}else{ mes4 = ""}
 if(document.getElementById('mes6').checked){ var mes6 = "por 6 meses, "}else{ mes6 = ""}
@@ -190,20 +186,32 @@ if(document.getElementById('fin13').checked){ var fin13 = ""}else{ fin13 = ""}
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
 premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
-rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11 + rvp12 + rvp13 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
+rvp6 + rvp7 + rvp9 + rvp10 + rvp11 + rvp12 + rvp13 + rvoEquipo - rvoExtra + Extra + 
+recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
+
+const total = plan + equipos + premium1 + premium2 + premium3 + premium4 + 
+premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
+premium12 + premium13 + premium14 + premium15 + Extra + recargo + tntflex + deco + cambio + recableado;
+
+const ofert = rvo + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp9 + rvp10 + rvp11 + rvp12 + 
+rvp13 + rvoEquipo - rvoExtra + rvoEquipoFree;
+
 
 final = "total a pagar $" + result;
 acepta = "Cliente acepta continuar con: "
 
-const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + bronce + broncehd + plata + pplatahd + orosd + porohd + poroplus +
- oroplushd +  rvo14 +
- rvo15 + tnt + rvp_1 + tntv + rvp_2 + tnthd + rvp_3 + rvp_4 + rvp_5 + hbo + rvp_6 + universal + rvp_7 + combo + star + disney + foxsport + rvp_9 + rvp_10 + hotpack + rvp_11 + 
- exxotico + rvp_12 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + rvo13 + mes2 + mes4 + mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + ini8 + ini9 + ini10 + ini11 + ini12 + ini13 + fin1 + fin2 + fin3 + fin4 + 
- fin5 + fin6 + fin7 + fin8 + fin9 + fin10 + fin11 + fin12 + fin13 + final;
+const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + directvgo + bronce + broncehd + 
+plata + pplatahd + orosd + porohd + poroplus + oroplushd +  rvo14 + rvo15 + tnt + rvp_1 + tntv + rvp_2 + tnthd + 
+rvp_3 + rvp_4 + rvp_5 + hbo + rvp_6 + universal + rvp_7 + combo + star + disney + foxsport + rvp_9 + rvp_10 + hotpack + rvp_11 + 
+exxotico + rvp_12 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + mes2 + mes4 + 
+mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + ini8 + ini9 + ini10 + ini11 + ini12 + ini13 + fin1 + 
+fin2 + fin3 + fin4 + fin5 + fin6 + fin7 + fin8 + fin9 + fin10 + fin11 + fin12 + fin13 + final;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
 document.getElementById('texto').innerHTML = suma;
+document.getElementById('total').innerHTML = total;
+document.getElementById('ofert').innerHTML = ofert;
 }
 
         
