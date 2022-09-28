@@ -136,17 +136,17 @@ if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 6 meses, "}else{
 if(document.getElementById('rvp10').checked){ var rvp_10 = "free x 3 meses, "}else{ rvp_10 = ""}
 if(document.getElementById('rvp11').checked){ var rvp_11 = "50% x 4 meses, "}else{ rvp_11 = ""}
 if(document.getElementById('rvp12').checked){ var rvp_12 = "50% x 4 meses, "}else{ rvp_12 = ""}
-if(document.getElementById('rvo2').checked){ var rvo2 = "con descuento en basico de $2.000 "}else{ rvo2 = ""}
-if(document.getElementById('rvo3').checked){ var rvo3 = "con descuento en basico de $4.000 "}else{ rvo3 = ""}
-if(document.getElementById('rvo4').checked){ var rvo4 = "con descuento en basico de $5.000 "}else{ rvo4 = ""}
-if(document.getElementById('rvo5').checked){ var rvo5 = "con descuento en basico de $6.000 "}else{ rvo5 = ""}
-if(document.getElementById('rvo6').checked){ var rvo6 = "con descuento en basico de $7.000 "}else{ rvo6 = ""}
-if(document.getElementById('rvo7').checked){ var rvo7 = "con descuento en basico de $8.000 "}else{ rvo7 = ""}
-if(document.getElementById('rvo8').checked){ var rvo8 = "con descuento en basico de $9.000 "}else{ rvo8 = ""}
-if(document.getElementById('rvo9').checked){ var rvo9 = "con descuento en basico de $10.000 "}else{ rvo9 = ""}
-if(document.getElementById('rvo10').checked){ var rvo10 = "con descuento en basico de $11.000 "}else{ rvo10 = ""}
-if(document.getElementById('rvo11').checked){ var rvo11 = "con descuento en basico de $12.000 "}else{ rvo11 = ""}
-if(document.getElementById('rvo12').checked){ var rvo12 = "con descuento en basico de $14.000 "}else{ rvo12 = ""}
+if(document.getElementById('rvo2').checked){ var rvo2 = "con descuento en basico de $2,000 "}else{ rvo2 = ""}
+if(document.getElementById('rvo3').checked){ var rvo3 = "con descuento en basico de $4,000 "}else{ rvo3 = ""}
+if(document.getElementById('rvo4').checked){ var rvo4 = "con descuento en basico de $5,000 "}else{ rvo4 = ""}
+if(document.getElementById('rvo5').checked){ var rvo5 = "con descuento en basico de $6,000 "}else{ rvo5 = ""}
+if(document.getElementById('rvo6').checked){ var rvo6 = "con descuento en basico de $7,000 "}else{ rvo6 = ""}
+if(document.getElementById('rvo7').checked){ var rvo7 = "con descuento en basico de $8,000 "}else{ rvo7 = ""}
+if(document.getElementById('rvo8').checked){ var rvo8 = "con descuento en basico de $9,000 "}else{ rvo8 = ""}
+if(document.getElementById('rvo9').checked){ var rvo9 = "con descuento en basico de $10,000 "}else{ rvo9 = ""}
+if(document.getElementById('rvo10').checked){ var rvo10 = "con descuento en basico de $11,000 "}else{ rvo10 = ""}
+if(document.getElementById('rvo11').checked){ var rvo11 = "con descuento en basico de $12,000 "}else{ rvo11 = ""}
+if(document.getElementById('rvo12').checked){ var rvo12 = "con descuento en basico de $14,000 "}else{ rvo12 = ""}
 if(document.getElementById('rvo14').checked){ var rvo14 = "50% deco Adicional x 3 meses, "}else{ rvo14 = ""}
 if(document.getElementById('rvo15').checked){ var rvo15 = "Deco Free x 3 meses, "}else{ rvo15 = ""}
 if(document.getElementById('mes2').checked){ var mes2 = "por 2 meses, "}else{ mes2 = ""}
@@ -197,7 +197,7 @@ const ofert = rvo + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp9 + rvp1
 rvp13 + rvoEquipo - rvoExtra + rvoEquipoFree;
 
 
-final = "total a pagar $" + result;
+final = "total a pagar $" + result.toLocaleString('en');
 acepta = "Cliente acepta continuar con: "
 
 const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + directvgo + bronce + broncehd + 
@@ -208,10 +208,10 @@ mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + in
 fin2 + fin3 + fin4 + fin5 + fin6 + fin7 + fin8 + fin9 + fin10 + fin11 + fin12 + fin13 + final;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
-document.getElementById('resultado').innerHTML = result;
+document.getElementById('resultado').innerHTML = result.toLocaleString('en');
 document.getElementById('texto').innerHTML = suma;
-document.getElementById('total').innerHTML = total;
-document.getElementById('ofert').innerHTML = ofert;
+document.getElementById('total').innerHTML = total.toLocaleString('en');
+document.getElementById('ofert').innerHTML = ofert.toLocaleString('en');
 }
 
         
