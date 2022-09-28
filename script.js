@@ -147,8 +147,8 @@ if(document.getElementById('rvo9').checked){ var rvo9 = "con descuento en basico
 if(document.getElementById('rvo10').checked){ var rvo10 = "con descuento en basico de $11.000 "}else{ rvo10 = ""}
 if(document.getElementById('rvo11').checked){ var rvo11 = "con descuento en basico de $12.000 "}else{ rvo11 = ""}
 if(document.getElementById('rvo12').checked){ var rvo12 = "con descuento en basico de $14.000 "}else{ rvo12 = ""}
-if(document.getElementById('rvo14').checked){ var rvo14 = "50% deco Adicional x 6 meses, "}else{ rvo14 = ""}
-if(document.getElementById('rvo15').checked){ var rvo15 = "Deco Free x 6 meses, "}else{ rvo15 = ""}
+if(document.getElementById('rvo14').checked){ var rvo14 = "50% deco Adicional x 3 meses, "}else{ rvo14 = ""}
+if(document.getElementById('rvo15').checked){ var rvo15 = "Deco Free x 3 meses, "}else{ rvo15 = ""}
 if(document.getElementById('mes2').checked){ var mes2 = "por 2 meses, "}else{ mes2 = ""}
 if(document.getElementById('mes4').checked){ var mes4 = "por 4 meses, "}else{ mes4 = ""}
 if(document.getElementById('mes6').checked){ var mes6 = "por 6 meses, "}else{ mes6 = ""}
