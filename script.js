@@ -47,11 +47,14 @@ const rvp4Check = document.querySelector('input[name=rvp4]:checked')
 const rvp5Check = document.querySelector('input[name=rvp5]:checked')
 const rvp6Check = document.querySelector('input[name=rvp6]:checked')
 const rvp7Check = document.querySelector('input[name=rvp7]:checked')
+const rvp8Check = document.querySelector('input[name=rvp8]:checked')
 const rvp9Check = document.querySelector('input[name=rvp9]:checked')
 const rvp10Check = document.querySelector('input[name=rvp10]:checked')
 const rvp11Check = document.querySelector('input[name=rvp11]:checked')
 const rvp12Check = document.querySelector('input[name=rvp12]:checked')
 const rvp13Check = document.querySelector('input[name=rvp13]:checked')
+const rvp14Check = document.querySelector('input[name=rvp14]:checked')
+const rvp15Check = document.querySelector('input[name=rvp15]:checked')
 const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')
 const rvoCheck1 = document.querySelector('input[name=rvoEquipoFree]:checked')
 const rvoText = document.querySelector('input[name=rvoExtra]')
@@ -88,11 +91,14 @@ const rvp4 = rvp4Check ?  Number(rvp4Check.value): 0
 const rvp5 = rvp5Check ?  Number(rvp5Check.value): 0
 const rvp6 = rvp6Check ?  Number(rvp6Check.value): 0
 const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
+const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
 const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
 const rvp10 = rvp10Check ?  Number(rvp10Check.value): 0
 const rvp11 = rvp11Check ?  Number(rvp11Check.value): 0
 const rvp12 = rvp12Check ?  Number(rvp12Check.value): 0
 const rvp13 = rvp13Check ?  Number(rvp13Check.value): 0
+const rvp14 = rvp14Check ?  Number(rvp14Check.value): 0
+const rvp15 = rvp15Check ?  Number(rvp15Check.value): 0
 const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
 const rvoEquipoFree = rvoCheck1 ?  Number(rvoCheck1.value): 0
 const rvoExtra = rvoText ?  Number(rvoText.value): 0
@@ -105,6 +111,8 @@ if(document.getElementById('oro4k').checked){ var oro4k = "Plan Oro 4k, "}else{ 
 if(document.getElementById('broncelite').checked){ var broncelite = "Plan Bronce Lite, "}else{ broncelite = ""}
 if(document.getElementById('broncehdn').checked){ var broncehdn = "Plan Bronce hd, "}else{ broncehdn = ""}
 if(document.getElementById('directvgo').checked){ var directvgo = "migracion a Directv Go, "}else{ directvgo = ""}
+if(document.getElementById('platacomboplus').checked){ var platacomboplus = "Plan Plata Combo Plus, "}else{ platacomboplus = ""}
+if(document.getElementById('orocomboplus').checked){ var orocomboplus = "Plan Oro Combo Plus, "}else{ orocomboplus = ""}
 if(document.getElementById('bronce').checked){ var bronce = "Pack Bronce, "}else{ bronce = ""}
 if(document.getElementById('broncehd').checked){ var broncehd = "Pack Bronce hd, "}else{ broncehd = ""}
 if(document.getElementById('plata').checked){ var plata = "Pack Plata, "}else{ plata = ""}
@@ -116,6 +124,8 @@ if(document.getElementById('oroplushd').checked){ var oroplushd = "Pack Oro Plus
 if(document.getElementById('tnt').checked){ var tnt = "Tnt "}else{ tnt = ""}
 if(document.getElementById('tntv').checked){ var tntv = "Tnt "}else{ tntv = ""}
 if(document.getElementById('tnthd').checked){ var tnthd = "TntHd "}else{ tnthd = ""}
+if(document.getElementById('tnthdn').checked){ var tnthdn = "TntHd "}else{ tnthdn = ""}
+if(document.getElementById('tntn').checked){ var tntn = "Tnt "}else{ tntn = ""}
 if(document.getElementById('hbo').checked){ var hbo = "Hbo "}else{ hbo = ""}
 if(document.getElementById('universal').checked){ var universal = "Universal "}else{ universal = ""}
 if(document.getElementById('combo2').checked){ var combo = "Combo+, "}else{ combo = ""}
@@ -128,14 +138,18 @@ if(document.getElementById('full').checked){ var full = "Full Service, "}else{ f
 if(document.getElementById('rvp1').checked){ var rvp_1 = "50% x 4 meses, "}else{ rvp_1 = ""}
 if(document.getElementById('rvp2').checked){ var rvp_2 = "50% x 4 meses, "}else{ rvp_2 = ""}
 if(document.getElementById('rvp3').checked){ var rvp_3 = "50% x 4 meses, "}else{ rvp_3 = ""}
-if(document.getElementById('rvp4').checked){ var rvp_4 = "free x 3 meses en HD, "}else{ rvp_4 = ""}
-if(document.getElementById('rvp5').checked){ var rvp_5 = "free x 3 meses en HD de tnt flexible, "}else{ rvp_5 = ""}
+if(document.getElementById('rvp4').checked){ var rvp_4 = "50% x 4 meses, "}else{ rvp_4 = ""}
+if(document.getElementById('rvp5').checked){ var rvp_5 = "free x 3 meses en HD de tnt, "}else{ rvp_5 = ""}
 if(document.getElementById('rvp6').checked){ var rvp_6 = "50% x 4 meses, "}else{ rvp_6 = ""}
-if(document.getElementById('rvp7').checked){ var rvp_7 = "50% x 6 meses, "}else{ rvp_7 = ""}
+if(document.getElementById('rvp7').checked){ var rvp_7 = "free x 3 meses en HD de tnt, "}else{ rvp_7 = ""}
+if(document.getElementById('rvp8').checked){ var rvp_8 = "free x 3 meses en HD de tnt flexible, "}else{ rvp_8 = ""}
 if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 6 meses, "}else{ rvp_9 = ""}
-if(document.getElementById('rvp10').checked){ var rvp_10 = "free x 3 meses, "}else{ rvp_10 = ""}
+if(document.getElementById('rvp10').checked){ var rvp_10 = "50% x 4 meses, "}else{ rvp_10 = ""}
 if(document.getElementById('rvp11').checked){ var rvp_11 = "50% x 4 meses, "}else{ rvp_11 = ""}
-if(document.getElementById('rvp12').checked){ var rvp_12 = "50% x 4 meses, "}else{ rvp_12 = ""}
+if(document.getElementById('rvp12').checked){ var rvp_12 = "free x 3 meses, "}else{ rvp_12 = ""}
+if(document.getElementById('rvp13').checked){ var rvp_13 = "50% x 4 meses, "}else{ rvp_13 = ""}
+if(document.getElementById('rvp14').checked){ var rvp_14 = "50% x 4 meses, "}else{ rvp_14 = ""}
+if(document.getElementById('rvp15').checked){ var rvp_15 = "50% x 4 meses, "}else{ rvp_15 = ""}
 if(document.getElementById('rvo2').checked){ var rvo2 = "con descuento en basico de $2,000 "}else{ rvo2 = ""}
 if(document.getElementById('rvo3').checked){ var rvo3 = "con descuento en basico de $4,000 "}else{ rvo3 = ""}
 if(document.getElementById('rvo4').checked){ var rvo4 = "con descuento en basico de $5,000 "}else{ rvo4 = ""}
@@ -186,24 +200,24 @@ if(document.getElementById('fin13').checked){ var fin13 = ""}else{ fin13 = ""}
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
 premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
-rvp6 + rvp7 + rvp9 + rvp10 + rvp11 + rvp12 + rvp13 + rvoEquipo - rvoExtra + Extra + 
+rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11 + rvp12 + rvp13 + rvp14 + rvp15 + rvoEquipo - rvoExtra + Extra + 
 recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
 
 const total = plan + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
 premium12 + premium13 + premium14 + premium15 + Extra + recargo + tntflex + deco + cambio + recableado;
 
-const ofert = rvo + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp9 + rvp10 + rvp11 + rvp12 + 
-rvp13 + rvoEquipo - rvoExtra + rvoEquipoFree;
+const ofert = rvo + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11 + rvp12 + 
+rvp13 + rvp14 + rvp15 + rvoEquipo - rvoExtra + rvoEquipoFree;
 
 
 final = "total a pagar $" + result.toLocaleString('en');
 acepta = "Cliente acepta continuar con: "
 
-const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + directvgo + bronce + broncehd + 
-plata + pplatahd + orosd + porohd + poroplus + oroplushd +  rvo14 + rvo15 + tnt + rvp_1 + tntv + rvp_2 + tnthd + 
+const suma = acepta + platahd + orohd + oroplus + oro4k + broncelite + broncehdn + directvgo + platacomboplus + orocomboplus + bronce + broncehd + 
+plata + pplatahd + orosd + porohd + poroplus + oroplushd +  rvo14 + rvo15 + tnt + tntv + rvp_1 + tntn + tnthdn + rvp_2 + tnthd + 
 rvp_3 + rvp_4 + rvp_5 + hbo + rvp_6 + universal + rvp_7 + combo + star + disney + foxsport + rvp_9 + rvp_10 + hotpack + rvp_11 + 
-exxotico + rvp_12 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + mes2 + mes4 + 
+exxotico + rvp_12 + rvp_13 + rvp_14 + rvp_15 + rvp_8 + full + rvo2 + rvo3 + rvo4 + rvo5 + rvo6 + rvo7 + rvo8 + rvo9 + rvo10 + rvo11 + rvo12 + mes2 + mes4 + 
 mes6 + mes8 + mes12 + mes0 + ini1 + ini2 + ini3 + ini4 + ini5 + ini6 + ini7 + ini8 + ini9 + ini10 + ini11 + ini12 + ini13 + fin1 + 
 fin2 + fin3 + fin4 + fin5 + fin6 + fin7 + fin8 + fin9 + fin10 + fin11 + fin12 + fin13 + final;
 
