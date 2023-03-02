@@ -22,6 +22,7 @@ const rvoRadio = document.querySelector('input[name=rvo]:checked')
 const equiposRadio = document.querySelector('input[name=equipos]:checked')
 const premium1Check = document.querySelector('input[name=tnt]:checked')
 const premium2Check = document.querySelector('input[name=Tnt]:checked')
+const premium16Check = document.querySelector('input[name=tntn]:checked')
 const premium3Check = document.querySelector('input[name=premium3]:checked')
 const premium4Check = document.querySelector('input[name=premium4]:checked')
 const premium5Check = document.querySelector('input[name=premium5]:checked')
@@ -79,6 +80,7 @@ const premium12 = premium12Check ?  Number(premium12Check.value): 0
 const premium13 = premium13Check ?  Number(premium13Check.value): 0
 const premium14 = premium14Check ?  Number(premium14Check.value): 0
 const premium15 = premium15Check ?  Number(premium15Check.value): 0
+const premium16 = premium16Check ?  Number(premium16Check.value): 0
 const recargo = recargoCheck ?  Number(recargoCheck.value): 0
 const tntflex = tntCheck ?  Number(tntCheck.value): 0
 const cambio = cambioCheck ?  Number(cambioCheck.value): 0
@@ -199,13 +201,13 @@ if(document.getElementById('fin13').checked){ var fin13 = ""}else{ fin13 = ""}
 
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
-premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
+premium12 + premium13 + premium14 + premium15 + premium16 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
 rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11 + rvp12 + rvp13 + rvp14 + rvp15 + rvoEquipo - rvoExtra + Extra + 
 recargo + tntflex + deco + cambio + recableado + rvoEquipoFree;
 
 const total = plan + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
-premium12 + premium13 + premium14 + premium15 + Extra + recargo + tntflex + deco + cambio + recableado;
+premium12 + premium13 + premium14 + premium15 + premium16 + Extra + recargo + tntflex + deco + cambio + recableado;
 
 const ofert = rvo + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvp11 + rvp12 + 
 rvp13 + rvp14 + rvp15 + rvoEquipo - rvoExtra + rvoEquipoFree;
