@@ -145,7 +145,7 @@ if(document.getElementById('rvp5').checked){ var rvp_5 = "free x 3 meses en HD d
 if(document.getElementById('rvp6').checked){ var rvp_6 = "50% x 4 meses, "}else{ rvp_6 = ""}
 if(document.getElementById('rvp7').checked){ var rvp_7 = "free x 3 meses en HD de tnt, "}else{ rvp_7 = ""}
 if(document.getElementById('rvp8').checked){ var rvp_8 = "free x 3 meses en HD de tnt flexible, "}else{ rvp_8 = ""}
-if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 6 meses, "}else{ rvp_9 = ""}
+if(document.getElementById('rvp9').checked){ var rvp_9 = "50% x 4 meses, "}else{ rvp_9 = ""}
 if(document.getElementById('rvp10').checked){ var rvp_10 = "50% x 4 meses, "}else{ rvp_10 = ""}
 if(document.getElementById('rvp11').checked){ var rvp_11 = "50% x 4 meses, "}else{ rvp_11 = ""}
 if(document.getElementById('rvp12').checked){ var rvp_12 = "free x 3 meses, "}else{ rvp_12 = ""}
