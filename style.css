@@ -66,6 +66,10 @@
     font-weight: 500;
     margin-top: 5px;
   }
+  .importante {
+    color: red;
+    
+  }
   input[type="radio"] {
       background-color: black;
       width: 17px;
